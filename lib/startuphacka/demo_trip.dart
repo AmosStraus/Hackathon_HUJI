@@ -1,0 +1,237 @@
+import 'package:huji_hackathon/guy_files/dummy_users.dart';
+import 'package:huji_hackathon/guy_files/user2.dart';
+
+class DemoTrip {
+  String userImage;
+  String postImage;
+  String routeImage;
+  String userName;
+  String userEmail;
+  String postTime;
+  String postTitle;
+  String postSummary;
+  String date;
+  String hour;
+  //Guy added from here
+  int maxPeople;
+  int currPeopleNum;
+  List<MyUser2> currPeople;
+  String location;
+  String duration;
+  double rank;
+
+  DemoTrip(
+      {this.userImage,
+      this.postImage,
+      this.routeImage,
+      this.userName,
+      this.userEmail,
+      this.postTime,
+      this.postTitle,
+      this.postSummary,
+      this.date,
+      this.hour,
+      this.maxPeople,
+      this.currPeopleNum,
+      this.currPeople,
+      this.location,
+      this.duration,
+      this.rank});
+}
+
+class DemoTrips {
+  static get trips => <DemoTrip>[
+        DemoTrip(
+            userImage: "assets/images/Amit.Edry@gmail.com25.jpeg",
+            postImage: "assets/images/karmila_kisalon.jpeg",
+            routeImage: "assets/images/KarmilaKisalon-Route.png",
+            userName: "Amit",
+            userEmail: "Amit.Edri@gmail.com",
+            postTime: "22 May, 2021",
+            postTitle: "נחל כרמילה",
+            postSummary: "סיבוב ושיכשוך קבוצתי בנחלי כרמילה וכסלון",
+            date: "23.5.21",
+            hour: "9:00",
+            maxPeople: 4,
+            currPeopleNum: 1,
+            currPeople: [DummyUsers2.all_users[1], DummyUsers2.all_users[5]],
+            location: "KarmilaKisalon",
+            duration: "4\"00",
+            rank: 4.5),
+        DemoTrip(
+            userImage: "assets/images/Tsuf.Gamlieli@gmail.com26.jpeg",
+            postImage: "assets/images/TurmusHill.jpeg",
+            routeImage: "assets/images/TurmusHill-Route.png",
+            userName: "Tsuf",
+            userEmail: "Tsuf.Gamlieli@gmail.com",
+            postTime: "25 May, 2021",
+            postTitle: "גבעת התורמוסים",
+            postSummary:
+                "עולים בשביל סובב הגבעה רואים את הנוף והטבע הנושם מסביב",
+            date: "26.5.21",
+            hour: "10:30",
+            maxPeople: 4,
+            currPeopleNum: 1,
+            currPeople: [DummyUsers2.all_users[3], DummyUsers2.all_users[7]],
+            location: "TurmusHill",
+            duration: "3\"30",
+            rank: 3.2),
+        DemoTrip(
+            userImage: "assets/images/Tsuf.Gamlieli@gmail.com26.jpeg",
+            postImage: "assets/images/ArugoStream.jpeg",
+            routeImage: "assets/images/ArugoStream-Route.png",
+            userName: "Tsuf",
+            userEmail: "Tsuf.Gamlieli@gmail.com",
+            postTime: "25 May, 2021",
+            postTitle: "נחל ארגו",
+            postSummary: "עולים במעלה הנחל ומשם למפל בסוף ויורדים חזרה רגלית",
+            date: "27.5.21",
+            hour: "10:30",
+            maxPeople: 4,
+            currPeopleNum: 1,
+            currPeople: [DummyUsers2.all_users[8]],
+            location: "ArgouStream",
+            duration: " 2\"30",
+            rank: 3.4),
+        DemoTrip(
+            userImage: "assets/images/Tsuf.Gamlieli@gmail.com26.jpeg",
+            postImage: "assets/images/CampingShalom.jpeg",
+            routeImage: "assets/images/CampingShalom-Route.png",
+            userName: "Tsuf",
+            userEmail: "Tsuf.Gamlieli@gmail.com",
+            postTime: "25 May, 2021",
+            postTitle: "מחנה שלום",
+            postSummary: "קמפינג לילי, ישיבה סביב המדורה וחברה טובה.",
+            date: "28.5.21",
+            hour: "10:30",
+            maxPeople: 6,
+            currPeopleNum: 1,
+            currPeople: [DummyUsers2.all_users[2], DummyUsers2.all_users[5]],
+            location: "CampingShalom",
+            duration: "48\"00",
+            rank: 1.1),
+        DemoTrip(
+            userImage: "assets/images/DaniellaLeshem@gmail.com27.jpeg",
+            postImage: "assets/images/EinKarem.jpeg",
+            routeImage: "assets/images/EinKarem-Route.png",
+            userName: "Daniella",
+            userEmail: "DaniellaLeshem@gmail.com",
+            postTime: "23 May, 2021",
+            postTitle: "עין כרם",
+            postSummary:
+                "עוברים מסביב לטירה, לאחר מכן עולים במעלה הגבעה שמאחוריה וחוזרים",
+            date: "25.5.21",
+            hour: "10:30",
+            maxPeople: 4,
+            currPeopleNum: 1,
+            currPeople: [DummyUsers2.all_users[11], DummyUsers2.all_users[5]],
+            location: "EinKarem",
+            duration: "2\"30",
+            rank: 3.3),
+        DemoTrip(
+            userImage: "assets/images/Gili.Shor@gmail.com27.jpeg",
+            postImage: "assets/images/EinMaboa.jpeg",
+            routeImage: "assets/images/EinMaboa-Route.png",
+            userName: "Gili",
+            userEmail: "Gili.Shor@gmail.com",
+            postTime: "25 May, 2021",
+            postTitle: "עין מבועה",
+            postSummary: "הליכה רגלית עד המפל ובחזרה",
+            date: "27.5.21",
+            hour: "10:30",
+            maxPeople: 4,
+            currPeopleNum: 1,
+            currPeople: [DummyUsers2.all_users[5], DummyUsers2.all_users[7]],
+            location: "EinMaboa",
+            duration: "1\"30",
+            rank: 3.8),
+        DemoTrip(
+            userImage: "assets/images/Tsuf.Gamlieli@gmail.com26.jpeg",
+            postImage: "assets/images/EmekHamazleva.jpeg",
+            routeImage: "assets/images/EmekHamazleva-Route.png",
+            userName: "Tsuf",
+            userEmail: "Tsuf.Gamlieli@gmail.com",
+            postTime: "25 May, 2021",
+            postTitle: "עמק המצלבה",
+            postSummary:
+                "עושים טיול סביב העצים והטבע. נשתדל לבקר במקומות עתיקים. ",
+            date: "29.5.21",
+            hour: "10:45",
+            maxPeople: 3,
+            currPeopleNum: 1,
+            currPeople: [DummyUsers2.all_users[1], DummyUsers2.all_users[5]],
+            location: "EmekHamazleva",
+            duration: "2\"00",
+            rank: 4.4),
+        DemoTrip(
+            userImage: "assets/images/Roni.Shem-Tov@gmail.com24.jpeg",
+            postImage: "assets/images/JerusForest.jpeg",
+            routeImage: "assets/images/JerusForest-Route.png",
+            userName: "Roni",
+            userEmail: "Roni.Shem-Tov@gmail.com",
+            postTime: "21 May, 2021",
+            postTitle: "יער ירושלים",
+            postSummary:
+                "עושים סיבוב ביער. נשתדל להיכנס ולראות את החיות ולהינות מהצל",
+            date: "25.5.21",
+            hour: "11:30",
+            maxPeople: 4,
+            currPeopleNum: 1,
+            currPeople: [DummyUsers2.all_users[12], DummyUsers2.all_users[5]],
+            location: "JerusForest",
+            duration: "3\"15",
+            rank: 4.9),
+        DemoTrip(
+            userImage: "assets/images/Tomer.Machluf@huji.maiil.ac.il25.jpeg",
+            postImage: "assets/images/KazivStream.jpeg",
+            routeImage: "assets/images/KazviStream-Route.png",
+            userName: "Tomer",
+            userEmail: "Tomer.Machluf@huji.maiil.ac.il",
+            postTime: "25 May, 2021",
+            postTitle: "נחל אכזיב",
+            postSummary: "עושים את כל הנחל, בתקופה הזאת המים רדודים",
+            date: "24.5.21",
+            hour: "09:30",
+            maxPeople: 4,
+            currPeopleNum: 1,
+            currPeople: [DummyUsers2.all_users[3], DummyUsers2.all_users[10]],
+            location: "KazivStream",
+            duration: "2\"00",
+            rank: 4.0),
+        DemoTrip(
+            userImage: "assets/images/Tsuf.Gamlieli@gmail.com26.jpeg",
+            postImage: "assets/images/OldCity.jpeg",
+            routeImage: "assets/images/OldCity-Route.png",
+            userName: "Tsuf",
+            userEmail: "Tsuf.Gamlieli@gmail.com",
+            postTime: "26 May, 2021",
+            postTitle: "העיר העתיקה בירושלים",
+            postSummary: "טיול בעיר העתיקה,נתחיל ברובע היהודי ונמשיך משם לשאר",
+            date: "28.5.21",
+            hour: "08:30",
+            maxPeople: 4,
+            currPeopleNum: 1,
+            currPeople: [DummyUsers2.all_users[11], DummyUsers2.all_users[5]],
+            location: "OldCity",
+            duration: "2\"00",
+            rank: 4.2),
+        DemoTrip(
+            userImage: "assets/images/Roni.Birger@gmail.com26.jpeg",
+            postImage: "assets/images/RamonCrater.jpeg",
+            routeImage: "assets/images/RamonCrater-Route.png",
+            userName: "Roni",
+            userEmail: "Roni.Birger@gmail.com",
+            postTime: "25 May, 2021",
+            postTitle: "מכתב רמון",
+            postSummary:
+                "נתחיל בתצפית בשעות הבוקר, נעשה סיבוב בשביל ההליכה ונחזור לראות את השקיעה בתצפית",
+            date: "24.5.21",
+            hour: "06:30",
+            maxPeople: 4,
+            currPeopleNum: 1,
+            currPeople: [DummyUsers2.all_users[1], DummyUsers2.all_users[2]],
+            location: "RamonCrater",
+            duration: "6\"00",
+            rank: 4.1),
+      ];
+}

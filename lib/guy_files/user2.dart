@@ -31,7 +31,7 @@ class MyUser2 {
       this.created = 0,
       this.attended = 0,
       this.attending = 0,
-      this.address});
+      this.address = "Jerusalem"});
 
   // These methods are for the database
 
@@ -46,7 +46,8 @@ class MyUser2 {
       List<String> trips,
       int created,
       int attended,
-      int attending}) {
+      int attending,
+      String address}) {
     return MyUser2(
         idUser: idUser ?? this.idUser,
         name: name ?? this.name,
@@ -55,7 +56,11 @@ class MyUser2 {
         description: description ?? this.description,
         email: email ?? this.email,
         password: password ?? this.password,
-        trips: trips ?? this.trips);
+        trips: trips ?? this.trips,
+        created: created ?? this.created,
+        attended: attended ?? this.attended,
+        attending: attended ?? this.attending,
+        address: address ?? this.address);
   }
 
   static MyUser2 fromJson(Map<String, dynamic> json) => MyUser2(
@@ -69,7 +74,8 @@ class MyUser2 {
       trips: json['trips'],
       created: json['created'],
       attended: json['attended'],
-      attending: json['attending']);
+      attending: json['attending'],
+      address: json['address']);
 
   Map<String, dynamic> toJson() => {
         'idUser': idUser,
@@ -82,6 +88,7 @@ class MyUser2 {
         'trips': trips,
         'created': created,
         'attended': attended,
-        'attending': attending
+        'attending': attending,
+        'address': address
       };
 }

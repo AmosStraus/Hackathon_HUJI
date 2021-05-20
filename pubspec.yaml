@@ -86,26 +86,26 @@ flutter:
     - assets/images/Yoav.Timor@gmail.com27.jpeg
 
     #Guy added trips photos
-    assets/images/ArugoStream
-    assets/images/ArugoStream-Route
-    assets/images/CampingShalom
-    assets/images/CampingShalom-Route
-    assets/images/EinKarem
-    assets/images/EinKarem-Route
-    assets/images/EinMaboa
-    assets/images/EinMaboa-Route
-    assets/images/EmekHamazleva
-    assets/images/EmekHamazleva-Route
-    assets/images/JerusForest
-    assets/images/JerusForest-Route
-    assets/images/KazivStream
-    assets/images/KazivStream-Route
-    assets/images/OldCity
-    assets/images/OldCity-Route
-    assets/images/RamonCrater
-    assets/images/RamonCrater-Route
-    assets/images/TurmusHill
-    assets/images/TurmusHill-Route
+    - assets/images/ArugotStream.jpeg
+    - assets/images/ArugotStream-Route.jpeg
+    - assets/images/CampingShalom.jpeg
+    - assets/images/CampingShalom-Route.png
+    - assets/images/EinKarem.jpg
+    - assets/images/EinKarem-Route.jpg
+    - assets/images/EinMaboa.jpeg
+    - assets/images/EinMaboa-Route.jpeg
+    - assets/images/EmekHamazleva.jpeg
+    - assets/images/EmekHamazleva-Route.png
+    - assets/images/JerusForest.jpeg
+    - assets/images/JerusForest-Route.png
+    - assets/images/KazivStream.jpeg
+    - assets/images/KazivStream-Route.jpeg
+    - assets/images/OldCity.jpeg
+    - assets/images/OldCity-Route.png
+    - assets/images/RamonCrater.jpeg
+    - assets/images/RamonCrater-Route.jpeg
+    - assets/images/TurmusHill.jpeg
+    - assets/images/TurmusHill-Route.png
 
   #   - images/a_dot_ham.jpeg
 

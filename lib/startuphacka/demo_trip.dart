@@ -49,7 +49,7 @@ class DemoTrips {
             userEmail: "Amit.Edri@gmail.com",
             postTime: "22 May, 2021",
             postTitle: "נחל כרמילה",
-            postSummary: "סיבוב ושיכשוך קבוצתי בנחלי כרמילה וכסלון",
+            postSummary: "הליכה נינוחה בטבע בטיול של חצי יום במסלול מעגלי",
             date: "23.5.21",
             hour: "9:00",
             maxPeople: 4,

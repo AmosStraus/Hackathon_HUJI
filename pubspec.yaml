@@ -85,6 +85,28 @@ flutter:
     - assets/images/Tomer.Machluf@huji.mail.ac.il25.jpeg
     - assets/images/Yoav.Timor@gmail.com27.jpeg
 
+    #Guy added trips photos
+    assets/images/ArugoStream
+    assets/images/ArugoStream-Route
+    assets/images/CampingShalom
+    assets/images/CampingShalom-Route
+    assets/images/EinKarem
+    assets/images/EinKarem-Route
+    assets/images/EinMaboa
+    assets/images/EinMaboa-Route
+    assets/images/EmekHamazleva
+    assets/images/EmekHamazleva-Route
+    assets/images/JerusForest
+    assets/images/JerusForest-Route
+    assets/images/KazivStream
+    assets/images/KazivStream-Route
+    assets/images/OldCity
+    assets/images/OldCity-Route
+    assets/images/RamonCrater
+    assets/images/RamonCrater-Route
+    assets/images/TurmusHill
+    assets/images/TurmusHill-Route
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

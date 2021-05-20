@@ -15,8 +15,8 @@ class PostCardPage extends StatelessWidget {
           height: 30,
         ),
         createCardRow(DemoTrips.trips[0], DemoTrips.trips[1]),
-        createCardRow(DemoTrips.trips[0], DemoTrips.trips[1]),
-        createCardRow(DemoTrips.trips[0], DemoTrips.trips[1]),
+        createCardRow(DemoTrips.trips[2], DemoTrips.trips[3]),
+        createCardRow(DemoTrips.trips[4], DemoTrips.trips[5]),
       ],
     );
   }
@@ -47,7 +47,7 @@ class TripCardWidget extends StatelessWidget {
       onTap: () {
         print(trip.postTitle);
         Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => TripProfile(trip)));
+            .push(MaterialPageRoute(builder: (context) => TripProfile(trip.userImage, trip)));
       },
       child: Container(
         width: MediaQuery.of(context).size.width / 2.15,
@@ -119,9 +119,7 @@ class _PostDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[_UserImage(trip)],
-    );
+    return _UserImage(trip);
   }
 }
 
@@ -137,8 +135,12 @@ class _UserImage extends StatelessWidget {
         innerDistance: -15,
         children: [
           buildImage(trip.userImage, true),
-          buildImage(DummyUsers2.all_users[1].urlAvatar, false),
-          buildImage(DummyUsers2.all_users[2].urlAvatar, false),
+          trip.currPeople.length > 0
+              ? buildImage(trip.currPeople[0].urlAvatar, false)
+              : null,
+          trip.currPeople.length > 1
+              ? buildImage(trip.currPeople[1].urlAvatar, false)
+              : null,
         ],
       ),
     );
